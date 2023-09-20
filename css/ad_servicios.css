@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #c31f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+.button{
+        font-size: 24px;
+        color: black;
+        font-weight: bolder;
+}
+.service {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(232, 14, 14, 0.2);
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.service button {
+    background-color: #c31f1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #c31f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    background-image: url('/img/Fondo\ cita.jpeg'); /* Replace with the actual path to your background image */
+    background-size: cover; /* This scales the background image to cover the entire body element */
+}
+
+
+
+*{
+    text-decoration: none;
+}

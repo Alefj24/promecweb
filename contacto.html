@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Contacto</h1>
+       
+    </header>
+    <main>
+        <section>
+            <h2>Información registro</h2>
+            <p>Puedes contactarnos de las siguientes maneras:</p>
+            <ul>
+                <li>Teléfono: <a href="tel:3007425689">3007425689</a></li>
+                <li>Correo electrónico: <a href="mailto:info@example.com">info@promec.com</a></li>
+                <li>Dirección: 123 Calle Principal, Ciudad</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+        
+                <a href="/error500.html"><input type="button" value="Enviar"></a>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PROMEC</p>
+    </footer>
+</body>
+</html>

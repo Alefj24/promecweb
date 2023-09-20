@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produccion</title>
+  <link rel="stylesheet" href="/css/produccion.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/img/promec.png" alt="logo">
+          <span class="nav-item">Admin</span>
+        </a></li>
+      
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Seguridad</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Gráficos </span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Inventario</span>
+        </a></li>
+        <li>
+          <a href="#">
+            <i class="fas fa-calendar-alt"></i> <!-- Cambiamos la clase a "fas fa-calendar-alt" para el ícono de calendario -->
+            <span class="nav-item">Calendario</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class="fas fa-bell"></i> <!-- Cambia la clase del ícono aquí -->
+            <span class="nav-item">Notificaciones</span> 
+          </a>
+        </li>
+        
+
+
+        
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Salir</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+
+
+      <div class="main-top">
+        <h1>PRODUCCIÓN</h1>
+        <div class="container">
+          <input type="text" placeholder="Buscar...">
+          <div class="buscar"><i class='bx bx-search' ></i></div>
+        </div>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <div class="adicionar">
+            <h1>Productos</h1>
+            <i class='bx bx-plus'></i>
+          </div>
+
+
+
+          <table class="table">
+            <thead>
+              <tr>
+                <td>Codigo</td>
+                <td>Nombre</td>
+                <td>Cantidad</td>
+                <td>Fecha inicio</td>
+                <td>Fecha entrega </td>
+                <td>Duración estimada </td>
+                <td>Categoria </td>
+                <th>     </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>78342</td>
+                <td>Láminas de metal</td>
+                <td>70</td>
+                <td> 10 julio de 2023</td>
+                <td>18 de julio de 2023 </td>
+                <td>8 DIAS </td>
+                <td> Metal</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+
+              </tr>
+              <tr class="active">
+                <td>56981</td>
+                      <td>Puertas</td>
+                      <td>20</td>
+                      <td>20 de agosto 2023</td>
+                      <td> 1 de septiembre 2023</td>
+                      <td>12 DIAS </td>
+                      <td>Metal </td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>23343</td>
+                      <td>Ventanas </td>
+                      <td>35</td>
+                      <td>12 de septiembre</td>
+                      <td> 22 de septiembre 2023</td>
+                      <td>10 DIA </td>
+                      <td>Metal </td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              <tr>
+                <td>55654</td>
+                <td>Rejas</td>
+                <td>40</td>
+                <td> 1 de octubre de 2023</td>
+                <td>5 de octubre de 2023 </td>
+                <td>5 DIAS </td>
+                <td> Metal</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>43455</td>
+                <td>Escaleras</td>
+                <td>50</td>
+                <td>12 de octubre de 2023</td>
+                <td>21 de ocubre de 2023 </td>
+                <td> 9 DIAS </td>
+                <td>Metal </td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>34578</td>
+                <td>Estanteria</td>
+                <td>35</td>
+                <td>25 de noviembre de 2023</td>
+                <td>31 de noviembre de 2023</td>
+                <td>6 DIAS </td>
+                <td> Metal</td>
+
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+            </tbody>
+          </table>
+          <div class="paginacion">
+            <a href=""><<</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">>></a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Servicios</title>
+  <link rel="stylesheet" href="/css/servicios.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/img/promec.png" alt="logo">
+          <span class="nav-item">Admin</span>
+        </a></li>
+        <li>
+          <a href="#">
+            <i class="fas fa-box"></i> <!-- Ícono de caja que representa "Productos" -->
+            <span class="nav-item">Productos</span>
+          </a>
+        </li>
+        
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Inventario</span>
+        </a></li>
+        <li>
+          <a href="#">
+            <i class="fas fa-handshake"></i> <!-- Ícono de apretón de manos que podría representar "Solicitudes" -->
+            <span class="nav-item">Solicitudes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i> <!-- Ícono de carrito de compras que podría representar "Pedidos" -->
+            <span class="nav-item">Pedidos</span>
+          </a>
+        </li>
+       
+        <li>
+          <a href="#">
+            <i class="fas fa-bell"></i> <!-- Cambiado a un ícono de notificaciones -->
+            <span class="nav-item">Notificaciones</span>
+          </a>
+        </li>
+    
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Salir</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+
+
+      <div class="main-top">
+        <h1>SERVICIOS </h1>
+        <div class="container">
+          <input type="text" placeholder="Buscar...">
+          <div class="buscar"><i class='bx bx-search' ></i></div>
+        </div>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <div class="adicionar">
+            <h1>usuarios recientes</h1>
+            <i class='bx bx-plus'></i>
+          </div>
+
+
+
+          <table class="table">
+            <thead>
+              <tr>
+                <td>Nombre</td>
+                      <td>Apellido</td>
+                      <td>entrega de servicios</td>
+                      <td>tipo servicio</td>
+                      <td> estado servicios</td>
+                    
+                <th>     </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jhon Deiby</td>
+                <td>Salazar Rayo</td>
+                <td>15-08-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span> Terminado</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+
+              </tr>
+              <tr class="active">
+                <td>Victor Manuel</td>
+                <td>Ciro Ledesma</td>
+                <td>19-08-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span>  por iniciar</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>Julian Andres</td>
+                <td>Quesada Carmona</td>
+                <td>25-09-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span> en proceso</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              <tr>
+                <td>Andres</td>
+                <td>Hernandez</td>
+                <td>25-08-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span>  por iniciar</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>Manuel</td>
+                <td>Chicangana</td>
+                <td>31-10-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span> Terminado </td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+             
+                <td>Julieta</td>
+                <td>Quesada</td>
+                <td>25-09-2023</td>
+                <td>mantenimiento</td>
+                <td>    <span class="status yellow"></span> en proceso</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+            </tbody>
+          </table>
+          <div class="paginacion">
+            <a href=""><<</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">>></a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

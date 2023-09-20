@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <style>
+        /* Tu CSS aquí */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="info">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="txt-1"> Gracias por tu visita</p>
+            <h2>Bienvenido</h2>
+            <hr>
+            <p class="txt-2">
+                Empresa PROMEC J.R S.A.S, dedicada a la producción y mantenimiento de estructuras de metal
+            </p>
+        </div>
+
+        <form class="form">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Iniciar Sesión</h2>
+            <p></p>
+            <div class="inputs">
+                <input type="email" class="box" placeholder="Ingresa tu correo" id="correo">
+                <span id="correo-validation"></span>
+                <input type="password" class="box" placeholder="Ingresa tu contraseña" id="contrasena">
+                <span id="contrasena-validation"></span>
+                <a href="#">¿Olvidaste tu Contraseña?</a>
+                <a href="/ad_servicios.html" class="submit" style="color: white;">Ingresar</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Función para validar el formato de correo electrónico
+        function validarCorreo(correo) {
+            const regexCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return regexCorreo.test(correo);
+        }
+
+        // Función para validar la contraseña (puedes agregar más reglas)
+        function validarContrasena(contrasena) {
+            // Por ejemplo, aquí puedes verificar la longitud de la contraseña o si cumple con ciertos requisitos.
+            return contrasena.length >= 8;
+        }
+
+        // Función para cambiar los íconos de validación
+        function actualizarIconosValidacion() {
+            const correo = document.getElementById('correo');
+            const contrasena = document.getElementById('contrasena');
+            const correoValidation = document.getElementById('correo-validation');
+            const contrasenaValidation = document.getElementById('contrasena-validation');
+
+            if (validarCorreo(correo.value)) {
+                correoValidation.innerHTML = '✔';
+                correoValidation.style.color = 'green';
+            } else {
+                correoValidation.innerHTML = '✘';
+                correoValidation.style.color = 'red';
+            }
+
+            if (validarContrasena(contrasena.value)) {
+                contrasenaValidation.innerHTML = '✔';
+                contrasenaValidation.style.color = 'green';
+            } else {
+                contrasenaValidation.innerHTML = '✘';
+                contrasenaValidation.style.color = 'red';
+            }
+        }
+
+        // Evento para actualizar los íconos de validación al cambiar el contenido de los campos
+        document.getElementById('correo').addEventListener('input', actualizarIconosValidacion);
+        document.getElementById('contrasena').addEventListener('input', actualizarIconosValidacion);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventario</title>
+  <link rel="stylesheet" href="/css/inventario.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/img/promec.png" alt="logo">
+          <span class="nav-item">Admin</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">vendidos</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Productos</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Gráficos </span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Alertas </span>
+        </a></li>
+        <li>
+          <a href="#">
+            <i class="fas fa-bell"></i> <!-- Cambia la clase del ícono aquí -->
+            <span class="nav-item">Notificaciones</span> 
+          </a>
+        </li>
+        
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Salir</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+
+
+      <div class="main-top">
+        <h1>INVENTARIO</h1>
+        <div class="container">
+          <input type="text" placeholder="Buscar...">
+          <div class="buscar"><i class='bx bx-search' ></i></div>
+        </div>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <div class="adicionar">
+            <h1>Productos</h1>
+            <i class='bx bx-plus'></i>
+          </div>
+
+
+
+          <table class="table">
+            <thead>
+              <tr>
+                <td>Codigo</td>
+                            <td>Fecha</td>
+                            <td>Tipo</td>
+                            <td>NIT Proveedor</td>
+                            <td>Existencias iniciales</td>
+                            <td>Descripción</td>
+                            <td>Ubicación</td>
+                <th>     </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>583216</td>
+                            <td>12/05/2023</td>
+                            <td>Control</td>
+                            <td>1726-1</td>
+                            <td>10</td>
+                            <td>Individual</td>
+                            <td>Usme</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+
+              </tr>
+              <tr class="active">
+                <td>974305</td>
+                      <td>17/08/2023</td>
+                      <td>Devolución</td>
+                      <td>13844-4</td>
+                      <td>10</td>
+                      <td>Individual</td>
+                      <td>Usme</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>123789</td>
+                <td>29/04/2023</td>
+                <td>Subalquiler a terceros</td>
+                <td>1745-5</td>
+                <td>5</td>
+                <td>Individual</td>
+                <td>Usme</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              <tr>
+                <td>456820</td>
+                <td>06/11/2023</td>
+                <td>Adquisición propia</td>
+                <td>134-7</td>
+                <td>5</td>
+                <td>Individual</td>
+                <td>Usme</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>789431</td>
+                <td>10/03/2023</td>
+                <td>Subalquiler a terceros</td>
+                <td>9733-1</td>
+                <td>10</td>
+                <td>Individual</td>
+                <td>Usme</td>
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+              <tr>
+                <td>234567</td>
+                      <td>22/01/2023</td>
+                      <td>Devolución</td>
+                      <td>1234-1</td>
+                      <td>8</td>
+                      <td>Individual</td>
+                      <td>Usme</td>
+
+                <td><button><i class='bx bx-edit-alt' ></i></button> 
+                <button><i class='bx bx-trash' ></i></button> </td> 
+              </tr>
+            </tbody>
+          </table>
+          <div class="paginacion">
+            <a href=""><<</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">>></a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>
